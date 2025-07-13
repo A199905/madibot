@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pill Dispenser Control</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="app-container">
+    <h1>💊 ESP32 Pill Dispenser</h1>
+
+    <button onclick="dispensePills()">Dispense Pills</button>
+
+    <div class="time-setter">
+      <h3>Set Medicine Time</h3>
+      <input type="number" id="hour" placeholder="Hour (0-23)">
+      <input type="number" id="minute" placeholder="Minute (0-59)">
+      <button onclick="setTime()">Set Time</button>
+    </div>
+
+    <div class="status">
+      <button onclick="checkStatus()">Check ESP32</button>
+      <p id="statusText">Status: Unknown</p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
